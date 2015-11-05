@@ -4,9 +4,9 @@ Name: Velvet
 Author: Alvy Piper (no contact email currently)
 Copyright: 2015
 Usage: More complex than GreenTea and also SDKless. A simple internal cheat with bunnyhop and norecoil, written for CSPromod BETA 1.10b for fun.
-Using content created by: Oubliette, NanoCat, and Valve.
+Using content created by: Casual_Hacker ( http://www.unknowncheats.me/forum/member239231.html ), NanoCat, and Valve.
 
-Any content creator that wants their work removed can contact me at my contact email.
+Any content creator that wants their work removed can contact me on UnknownCheats for now. ( http://www.unknowncheats.me/forum/member334125.html )
 
 Feel free to redistribute, modify, and share. Please give credit where it is due, though.
 
