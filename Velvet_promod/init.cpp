@@ -29,7 +29,7 @@ void init::dointerface()
 
 	dosigscan(); //scans for clientmode and globals
 
-	msg("client is at 0x%x\n", client); //check if pointer is valid
+	msg("client is at 0x%x\n", client); //allows us to check if pointer is valid
 	msg("engine is at 0x%x\n", engine);
 	msg("entitylist is at 0x%x\n", elist);
 	msg("clientmode is at 0x%x\n", clientmode);
