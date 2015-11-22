@@ -5,6 +5,6 @@
 class cmisc
 {
 public:
-	void norecoil(cusercmd*);
-	void bunnyhop(cusercmd*);
+	void norecoil(centity* localplayer, cusercmd*);
+	void bunnyhop(centity* localplayer, cusercmd*);
 };

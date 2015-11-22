@@ -1,14 +1,14 @@
 #include "misc.h"
 
-void cmisc::norecoil(cusercmd *cmd)
+void cmisc::norecoil(centity* localplayer, cusercmd *cmd)
 {
-	if (localplayer()->getactiveweapon() != 0xFFFFFFFF) //do NOT read if the handle is invalid
+	if (localplayer->getactiveweapon() != 0xFFFFFFFF) //do NOT read if the handle is invalid
 	{
-		Vector oldpunch = localplayer()->getpunchangle(); //read & backup punch
+		Vector oldpunch = localplayer->getpunchangle(); //read & backup punch
 
 		gamemovement->decaypunchangle(); //decaypunchangle
 
-		Vector newpunch = localplayer()->getpunchangle(); //read new punch
+		Vector newpunch = localplayer->getpunchangle(); //read new punch
 
 		if (cmd->buttons &IN_ATTACK)
 		{
@@ -18,9 +18,9 @@ void cmisc::norecoil(cusercmd *cmd)
 	}
 }
 
-void cmisc::bunnyhop(cusercmd *cmd) //TODO: Clean up and use proper bitwise.
+void cmisc::bunnyhop(centity* localplayer, cusercmd *cmd) //TODO: Clean up and use proper bitwise.
 {
-	if (cmd->buttons &IN_JUMP && (!(localplayer()->flags() &FL_ONGROUND))) //checks if player is not on the ground and in jump
+	if (cmd->buttons &IN_JUMP && (!(localplayer->flags() &FL_ONGROUND))) //checks if player is not on the ground and in jump
 	{
 		cmd->buttons &= ~IN_JUMP; //sets them to not be jumping.
 	}
