@@ -17,9 +17,9 @@ public:
 	{
 		return readptr<int>(this, 0xFB8); //m_nTickBase
 	}
-	inline unsigned long getactiveweapon()
+	inline DWORD getactiveweapon()
 	{
-		return readptr<unsigned long>(this, 0xC4C); //m_hActiveWeapon
+		return readptr<DWORD>(this, 0xC4C); //m_hActiveWeapon
 	}
 	inline bool isdormant()
 	{
