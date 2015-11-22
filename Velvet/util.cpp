@@ -2,9 +2,9 @@
 
 using namespace velvet;
 
-unsigned long util::findpattern(unsigned long address, unsigned long size, const char* pattern)
+DWORD util::findpattern(DWORD address, size_t size, const char* pattern)
 {
-	for (unsigned long i = 0; i < size; ++i, ++address)
+	for (size_t i = 0; i < size; ++i, ++address)
 	if (util::datacompare((const char*) address, pattern))
 		return address;
 

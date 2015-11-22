@@ -36,6 +36,6 @@ namespace velvet
 	namespace util
 	{
 		extern bool datacompare(const char*, const char*);
-		extern unsigned long findpattern(unsigned long, unsigned long, const char*);
+		extern DWORD findpattern(DWORD, size_t, const char*);
 	}
 }

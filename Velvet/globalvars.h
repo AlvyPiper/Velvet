@@ -7,6 +7,7 @@ struct cglobalvars
 	float	realtime;
 	int		framecount;
 	float	absoluteframetime;
+	float	absoluteframestarttimestddev;
 	float	curtime;
 	float	frametime;
 	int		maxclients;

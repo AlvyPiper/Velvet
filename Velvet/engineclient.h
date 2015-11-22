@@ -9,15 +9,15 @@ public:
 	}
 	inline void getviewangles(Vector &ang)
 	{
-		return getvfunc<void(__thiscall *)(void *, Vector&)>(this, 19)(this, ang);
+		return getvfunc<void(__thiscall *)(void *, Vector&)>(this, 18)(this, ang);
 	}
 	inline void setviewangles(Vector &ang)
 	{
-		return getvfunc<void(__thiscall *)(void *, Vector&)>(this, 20)(this, ang);
+		return getvfunc<void(__thiscall *)(void *, Vector&)>(this, 19)(this, ang);
 	}
 	inline int getmaxclients()
 	{
-		return getvfunc<int(__thiscall *)(void *)>(this, 21)(this);
+		return getvfunc<int(__thiscall *)(void *)>(this, 20)(this);
 	}
 };
 extern cengine *engine;
