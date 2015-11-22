@@ -7,27 +7,27 @@ class centity
 public:
 	inline int flags()
 	{
-		return readptr<int>(this, 0x2DC); //m_fFlags
+		return readptr<int>(this, 0x100); //m_fFlags
 	}
 	inline Vector getpunchangle()
 	{
-		return readptr<Vector>(this, (0xCA0 + 0x6C)); //m_Local + m_vecPunchAngle
+		return readptr<Vector>(this, (0x2FF8)); //m_Local + m_vecPunchAngle (0x2F88 + 0x64)
 	}
 	inline int gettickbase()
 	{
-		return readptr<int>(this, 0xFB8); //m_nTickBase
+		return readptr<int>(this, 0x33EC); //m_nTickBase
 	}
 	inline DWORD getactiveweapon()
 	{
-		return readptr<DWORD>(this, 0xC4C); //m_hActiveWeapon
+		return readptr<DWORD>(this, 0x2EC8); //m_hActiveWeapon
 	}
 	inline bool isdormant()
 	{
-		return getvfunc<bool(__thiscall *)(void *)>((this + 0x8), 8)((this + 0x8));
+		return getvfunc<bool(__thiscall *)(void *)>((this + 0x8), 9)((this + 0x8));
 	}
 	inline void *getmodel()
 	{
-		return getvfunc<void *(__thiscall *)(void *)>((this + 0x4), 9)((this + 0x4));
+		return getvfunc<void *(__thiscall *)(void *)>((this + 0x4), 8)((this + 0x4));
 	}
 	inline Vector& getabsorigin()
 	{
@@ -35,7 +35,7 @@ public:
 	}
 	inline Vector getvecviewoffset()
 	{
-		return readptr<Vector>(this, 0xDC); //m_vecViewOffset[0]
+		return readptr<Vector>(this, 0x104); //m_vecViewOffset[0]
 	}
 	inline Vector geteyepos()
 	{

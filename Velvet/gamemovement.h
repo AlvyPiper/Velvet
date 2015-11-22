@@ -7,7 +7,7 @@ class cgamemovement
 public:
 	inline void decaypunchangle()
 	{
-		return getvfunc<void(__thiscall *)(void *)>(this, 15)(this);
+		return getvfunc<void(__thiscall *)(void *)>(this, 19)(this);
 	}
 };
 extern cgamemovement *gamemovement;

@@ -11,7 +11,7 @@ public:
 	}
 	inline centity *entfromhandle(DWORD i)
 	{
-		return getvfunc<centity *(__thiscall *)(void *, int)>(this, 6)(this, i);
+		return getvfunc<centity *(__thiscall *)(void *, int)>(this, 4)(this, i);
 	}
 };
 extern celist *elist;

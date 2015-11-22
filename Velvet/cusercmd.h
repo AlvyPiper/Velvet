@@ -8,6 +8,7 @@ public:
 	int		command_number;
 	int		tick_count;
 	Vector	viewangles;
+	Vector	aimdirection;
 	Vector	move;
 	int		buttons;
 	char	impulse;
@@ -17,4 +18,6 @@ public:
 	short	mousedx;
 	short	mousedy;
 	bool	hasbeenpredicted;
+private:
+	char	pad01[24];
 };
