@@ -5,13 +5,21 @@
 class centity
 {
 public:
+	inline BYTE lifestate()
+	{
+		return readptr<int>(this, 0x25B); //m_lifeState
+	}
 	inline int flags()
 	{
 		return readptr<int>(this, 0x100); //m_fFlags
 	}
-	inline Vector getpunchangle()
+	inline Vector* getaimpunchangle()
 	{
-		return readptr<Vector>(this, (0x2FF8)); //m_Local + m_vecPunchAngle (0x2F88 + 0x64)
+		return makeptr<Vector>(this, 0x2FF8); //m_Local + m_aimPunchAngle
+	}
+	inline Vector* getviewpunchangle()
+	{
+		return makeptr<Vector>(this, 0x2FEC); //m_Local + m_viewPunchAngle
 	}
 	inline int gettickbase()
 	{
