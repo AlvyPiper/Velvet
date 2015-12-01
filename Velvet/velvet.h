@@ -23,7 +23,10 @@ namespace velvet
 	{
 		extern bool __fastcall createmove(void*, void*, float, cusercmd*);
 		extern void __fastcall painttraverse(void*, void*, unsigned int, bool, bool);
-		extern void(__thiscall *org_painttraverse)(void*, unsigned int, bool, bool);
+		extern void __fastcall framestagenotify(void*, void*, clientframestage_t);
+		typedef void(__thiscall *painttraverse_t)(void*, unsigned int, bool, bool);
+		typedef void(__thiscall *framestagenotify_t)(void*, clientframestage_t);
+		extern framestagenotify_t org_framestagenotify;
 	}
 
 	namespace init

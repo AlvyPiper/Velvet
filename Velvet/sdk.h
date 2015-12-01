@@ -9,6 +9,7 @@
 #include "globalvars.h"
 #include "entity.h"
 #include "baseclient.h"
+#include "clientframestage.h"
 #include "clientmodeshared.h"
 #include "engineclient.h"
 #include "entlist.h"

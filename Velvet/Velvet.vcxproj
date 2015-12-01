@@ -74,6 +74,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="baseclient.h" />
+    <ClInclude Include="clientframestage.h" />
     <ClInclude Include="gamemovement.h" />
     <ClInclude Include="clientmodeshared.h" />
     <ClInclude Include="cusercmd.h" />
@@ -91,6 +92,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="createmove.cpp" />
+    <ClCompile Include="framestagenotify.cpp" />
     <ClCompile Include="init.cpp" />
     <ClCompile Include="misc.cpp" />
     <ClCompile Include="util.cpp" />
