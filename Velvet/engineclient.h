@@ -19,5 +19,9 @@ public:
 	{
 		return getvfunc<int(__thiscall *)(void *)>(this, 20)(this);
 	}
+	inline bool isingame()
+	{
+		return getvfunc<bool(__thiscall *)(void *)>(this, 26)(this);
+	}
 };
 extern cengine *engine;
