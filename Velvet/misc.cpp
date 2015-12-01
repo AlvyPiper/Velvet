@@ -4,11 +4,11 @@ void cmisc::norecoil(centity* localplayer, cusercmd *cmd)
 {
 	if (localplayer->getactiveweapon() != 0xFFFFFFFF) //do NOT read if the handle is invalid
 	{
-		Vector oldpunch = localplayer->getpunchangle(); //read & backup punch
+		Vector oldpunch = *localplayer->getaimpunchangle(); //read & backup punch
 
 		gamemovement->decaypunchangle(); //decaypunchangle
 
-		Vector newpunch = localplayer->getpunchangle(); //read new punch
+		Vector newpunch = *localplayer->getaimpunchangle(); //read new punch
 
 		if (cmd->buttons &IN_ATTACK)
 		{

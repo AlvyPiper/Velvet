@@ -13,6 +13,8 @@ clientmodeshared	*clientmode;
 cglobalvars			*globals;
 cgamemovement		*gamemovement;
 
+hookmngr::framestagenotify_t hookmngr::org_framestagenotify = NULL;
+
 void init::dosigscan()
 {
 	DWORD* clienttable = (DWORD*) *(DWORD*) client;
@@ -46,7 +48,15 @@ void init::dohook()
 	clientModeHook->HookMethod(&hookmngr::createmove, 24); //replaces the pointer to CreateMove with our own
 	clientModeHook->Rehook(); //for some reason you have to rehook.
 
+	VMTBaseManager* baseClientHook = new VMTBaseManager();
+	baseClientHook->Init(client);
+	baseClientHook->HookMethod(&hookmngr::framestagenotify, 36);
+	baseClientHook->Rehook();
+
+	hookmngr::org_framestagenotify = baseClientHook->GetMethod<hookmngr::framestagenotify_t>(36);
+
 	msg("hooked createmove at 0x%x\n", hookmngr::createmove);
+	msg("hooked framestagenotify at 0x%x\n", hookmngr::framestagenotify);
 }
 
 void init::finalize()

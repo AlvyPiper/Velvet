@@ -105,6 +105,9 @@
     <ClInclude Include="vmt.h">
       <Filter>Header Files\cheat\vmt</Filter>
     </ClInclude>
+    <ClInclude Include="clientframestage.h">
+      <Filter>Header Files\sdk\client</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="velvet.cpp">
@@ -124,6 +127,9 @@
     </ClCompile>
     <ClCompile Include="vmt.cpp">
       <Filter>Source Files\cheat\vmt</Filter>
+    </ClCompile>
+    <ClCompile Include="framestagenotify.cpp">
+      <Filter>Source Files\cheat\hooks</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
