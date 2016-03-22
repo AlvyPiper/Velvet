@@ -58,6 +58,9 @@
     <Filter Include="Source Files\cheat\vmt">
       <UniqueIdentifier>{782b19df-de89-4f3e-897e-b6220774847c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\sdk\matrix3x4">
+      <UniqueIdentifier>{6cad1143-407f-4e83-9999-64c7ac5191b3}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="vector.h">
@@ -107,6 +110,12 @@
     </ClInclude>
     <ClInclude Include="clientframestage.h">
       <Filter>Header Files\sdk\client</Filter>
+    </ClInclude>
+    <ClInclude Include="debugoverlay.h">
+      <Filter>Header Files\sdk\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="matrix3x4.h">
+      <Filter>Header Files\sdk\matrix3x4</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

@@ -2,6 +2,7 @@
 
 #include <Windows.h>
 #include "vector.h"
+#include "matrix3x4.h"
 #include "vmt.h"
 #include "getvfunc.h"
 #include "cusercmd.h"
@@ -12,6 +13,7 @@
 #include "clientframestage.h"
 #include "clientmodeshared.h"
 #include "engineclient.h"
+#include "debugoverlay.h"
 #include "entlist.h"
 #include "gamemovement.h"
 #include "misc.h"

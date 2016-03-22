@@ -9,6 +9,7 @@ WarningFn			warning;
 cclient				*client;
 celist				*elist;
 cengine				*engine;
+cdebugoverlay		*debugoverlay;
 clientmodeshared	*clientmode;
 cglobalvars			*globals;
 cgamemovement		*gamemovement;
@@ -26,6 +27,7 @@ void init::dointerface()
 {
 	client = createinterface<cclient*>("client.dll", "VClient017"); //pointer to client
 	engine = createinterface<cengine*>("engine.dll", "VEngineClient013"); //pointer to engineclient
+	debugoverlay = createinterface<cdebugoverlay*>("engine.dll", "VDebugOverlay004"); //pointer to debugoverlay
 	elist = createinterface<celist*>("client.dll", "VClientEntityList003"); //pointer to entitylist
 	gamemovement = createinterface<cgamemovement*>("client.dll", "GameMovement001"); //pointer to gamemovement
 
@@ -33,6 +35,7 @@ void init::dointerface()
 
 	msg("client is at 0x%x\n", client); //allows us to check if pointer is valid
 	msg("engine is at 0x%x\n", engine);
+	msg("debugoverlay is at 0x%x\n", debugoverlay);
 	msg("entitylist is at 0x%x\n", elist);
 	msg("clientmode is at 0x%x\n", clientmode);
 	msg("gamemovement is at 0x%x\n", gamemovement);

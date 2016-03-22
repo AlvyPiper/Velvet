@@ -75,6 +75,7 @@
   <ItemGroup>
     <ClInclude Include="baseclient.h" />
     <ClInclude Include="clientframestage.h" />
+    <ClInclude Include="debugoverlay.h" />
     <ClInclude Include="gamemovement.h" />
     <ClInclude Include="clientmodeshared.h" />
     <ClInclude Include="cusercmd.h" />
@@ -84,6 +85,7 @@
     <ClInclude Include="enums.h" />
     <ClInclude Include="getvfunc.h" />
     <ClInclude Include="globalvars.h" />
+    <ClInclude Include="matrix3x4.h" />
     <ClInclude Include="misc.h" />
     <ClInclude Include="sdk.h" />
     <ClInclude Include="vector.h" />
