@@ -49,5 +49,9 @@ public:
 	{
 		return getabsorigin() + getvecviewoffset();
 	}
+	inline bool setupbones(matrix3x4_t* bonematrix, int maxbones, int mask, float curtime = 0) {
+		void* renderable = reinterpret_cast<void*>(reinterpret_cast<DWORD>(this) + 0x4);
+		return getvfunc<bool(__thiscall *)(void*, matrix3x4_t*, int, int, float)>(renderable, 13)(renderable, bonematrix, maxbones, mask, curtime);
+	}
 };
 extern centity *ent;
