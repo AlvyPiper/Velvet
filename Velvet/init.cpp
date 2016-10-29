@@ -25,7 +25,7 @@ void init::dosigscan()
 
 void init::dointerface()
 {
-	client = createinterface<cclient*>("client.dll", "VClient017"); //pointer to client
+	client = createinterface<cclient*>("client.dll", "VClient018"); //pointer to client
 	engine = createinterface<cengine*>("engine.dll", "VEngineClient014"); //pointer to engineclient
 	debugoverlay = createinterface<cdebugoverlay*>("engine.dll", "VDebugOverlay004"); //pointer to debugoverlay
 	elist = createinterface<celist*>("client.dll", "VClientEntityList003"); //pointer to entitylist
