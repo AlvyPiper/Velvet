@@ -1,7 +1,7 @@
 /*
 
 Name: Velvet
-Author: Alvy Piper (no contact email currently)
+Author: Alvy Piper <alvycat@protonmail.com>
 CSGO adaptation: aixxe <aixxe@skyenet.org>
 Copyright: 2015
 Usage: More complex than GreenTea and also SDKless. A simple internal cheat with bunnyhop and norecoil, written for CSPromod BETA 1.10b for fun.
